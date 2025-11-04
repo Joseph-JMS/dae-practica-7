@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrl: './inicio.css',
 })
 export class Inicio {
+  desarrollador: string = 'Joseph Montoya';
+  version: string = '1.0.0';
+  fecha: string = 'Octubre 2025';
 
+  mostrarInformacion() {
+    alert(`Desarrollado por: ${this.desarrollador}\nVersión: ${this.version}\nFecha: ${this.fecha}`);
+  }
+
+  cambiarDesarrollador() {
+    this.desarrollador = 'Carlos Rodriguez';
+  }
 }
